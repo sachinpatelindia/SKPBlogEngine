@@ -19,8 +19,8 @@ namespace SKPBlogEngine.Web.Controllers
 
         public IActionResult Index()
         {
-            _memberRepository.Insert(new Member {Email="sachin@skpatel.net" });
-            return View();
+            var members=_memberRepository.Table.ToList();
+            return View(members);
         }
 
         public IActionResult Privacy()
