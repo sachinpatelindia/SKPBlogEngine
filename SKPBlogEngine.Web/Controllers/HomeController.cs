@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SKPBlogEngine.Web.Models;
 using SKPBlogEngine.Web.System;
+using SKPBlogEngine.Web.System.Entities;
 using System.Diagnostics;
 
 namespace SKPBlogEngine.Web.Controllers
@@ -9,15 +10,16 @@ namespace SKPBlogEngine.Web.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        private readonly IDbContext _dbContext;
-        public HomeController(ILogger<HomeController> logger, IDbContext dbContext)
+        private readonly IRepository<Member> _memberRepository;
+        public HomeController(ILogger<HomeController> logger, IRepository<Member> memberRepository)
         {
-            _dbContext = dbContext;
+            _memberRepository = memberRepository;
             _logger = logger;
         }
 
         public IActionResult Index()
         {
+            _memberRepository.Insert(new Member {Email="sachin@skpatel.net" });
             return View();
         }
 

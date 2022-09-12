@@ -12,7 +12,12 @@ namespace SKPBlogEngine.Web.System
         {
             _configuration = configuration;
         }
-        public string DbPath => _configuration.GetValue<string>("Database:FilePath");
+        public virtual new DbSet<TEntity> Set<TEntity>() where TEntity:BaseEntity
+        {
+            return base.Set<TEntity>();
+        }
+        private string DbPath => _configuration.GetValue<string>("Database:FilePath");
+
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             options.UseSqlite($"Data Source={DbPath}");
