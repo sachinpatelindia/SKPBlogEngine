@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SKPBlogEngine.Web.Models;
+using SKPBlogEngine.Web.System;
 using System.Diagnostics;
 
 namespace SKPBlogEngine.Web.Controllers
@@ -8,8 +9,10 @@ namespace SKPBlogEngine.Web.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IDbContext _dbContext;
+        public HomeController(ILogger<HomeController> logger, IDbContext dbContext)
         {
+            _dbContext = dbContext;
             _logger = logger;
         }
 
