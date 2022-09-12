@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SKPBlogEngine.Web", "SKPBlogEngine.Web\SKPBlogEngine.Web.csproj", "{799AD773-5B82-41C9-9BEF-86EA4E8F8724}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SKPBlogEngine.Base", "SKPBlogEngine.Base\SKPBlogEngine.Base.csproj", "{56F79DC0-FBEE-4C94-AD73-513AE3B764CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{799AD773-5B82-41C9-9BEF-86EA4E8F8724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{799AD773-5B82-41C9-9BEF-86EA4E8F8724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{799AD773-5B82-41C9-9BEF-86EA4E8F8724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{799AD773-5B82-41C9-9BEF-86EA4E8F8724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56F79DC0-FBEE-4C94-AD73-513AE3B764CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56F79DC0-FBEE-4C94-AD73-513AE3B764CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56F79DC0-FBEE-4C94-AD73-513AE3B764CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56F79DC0-FBEE-4C94-AD73-513AE3B764CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9889E459-D273-4F02-A78F-02FA280D7343}
+	EndGlobalSection
+EndGlobal
