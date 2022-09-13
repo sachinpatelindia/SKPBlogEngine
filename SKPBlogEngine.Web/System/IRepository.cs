@@ -1,4 +1,6 @@
-﻿namespace SKPBlogEngine.Web.System
+﻿using SKPBlogEngine.Base.Domain;
+
+namespace SKPBlogEngine.Web.System
 {
     public interface IRepository<T> where T : BaseEntity
     {

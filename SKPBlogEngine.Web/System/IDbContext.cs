@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SKPBlogEngine.Base.Domain;
 
 namespace SKPBlogEngine.Web.System
 {

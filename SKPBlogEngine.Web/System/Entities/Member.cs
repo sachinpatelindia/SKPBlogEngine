@@ -1,4 +1,6 @@
-﻿namespace SKPBlogEngine.Web.System.Entities
+﻿using SKPBlogEngine.Base.Domain;
+
+namespace SKPBlogEngine.Web.System.Entities
 {
     public class Member:BaseEntity
     {
