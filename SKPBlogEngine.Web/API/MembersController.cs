@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 using SKPBlogEngine.Base.Domain.Members;
 using SKPBlogEngine.Web.Controllers;
 using SKPBlogEngine.Web.System;
@@ -8,6 +9,7 @@ using SKPBlogEngine.Web.System;
 namespace SKPBlogEngine.Web.API
 {
     [Route("api/[controller]")]
+    [EnableCors("corsapp")]
     [ApiController]
     public class MembersController : ControllerBase
     {
