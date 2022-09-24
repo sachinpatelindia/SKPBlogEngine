@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SKPBlogEngine.Web.Models;
 using SKPBlogEngine.Web.System;
-using SKPBlogEngine.Web.System.Entities;
 using System.Diagnostics;
 
 namespace SKPBlogEngine.Web.Controllers
