@@ -1,8 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SKPBlogEngine.Base.Domain;
-using SKPBlogEngine.Web.System.Entities;
-using System;
-using System.IO;
+using SKPBlogEngine.Base.Domain.App;
+using SKPBlogEngine.Base.Domain.Members;
 namespace SKPBlogEngine.Web.System
 {
     public class SKPDbContext:DbContext, IDbContext
@@ -27,6 +26,9 @@ namespace SKPBlogEngine.Web.System
         {
             modelBuilder.Entity<Member>().ToTable(nameof(Member));
             modelBuilder.Entity<Member>().HasKey(m=>m.Id);
+
+            modelBuilder.Entity<App>().ToTable(nameof(App));
+            modelBuilder.Entity<App>().HasKey(m => m.Id);
         }
     }
 }

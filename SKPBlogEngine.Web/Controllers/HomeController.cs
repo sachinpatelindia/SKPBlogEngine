@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SKPBlogEngine.Base.Domain.Members;
 using SKPBlogEngine.Web.Models;
 using SKPBlogEngine.Web.System;
 using System.Diagnostics;
@@ -23,6 +24,10 @@ namespace SKPBlogEngine.Web.Controllers
         }
 
         public IActionResult Privacy()
+        {
+            return View();
+        }
+        public IActionResult About()
         {
             return View();
         }

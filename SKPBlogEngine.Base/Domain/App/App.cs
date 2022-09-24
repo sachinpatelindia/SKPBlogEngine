@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SKPBlogEngine.Base.Domain.App
+﻿namespace SKPBlogEngine.Base.Domain.App
 {
-    internal class App
+    public partial class App:BaseEntity
     {
+        public string AppName { get; set; }
+        public string SystemEmail { get; set; }
+        public string Phone { get; set; }
     }
 }

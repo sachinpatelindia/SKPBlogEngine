@@ -38,6 +38,15 @@ namespace SKPBlogEngine.Web.System
             return entity;
         }
 
+        public T Delete(T entity)
+        {
+            if (entity == null)
+                throw new ArgumentNullException(nameof(entity));
+            this.Entities.Remove(entity);
+            _dbContext.SaveChanges();
+            return entity;
+        }
+
         private DbSet<T> Entities
         {
             get
