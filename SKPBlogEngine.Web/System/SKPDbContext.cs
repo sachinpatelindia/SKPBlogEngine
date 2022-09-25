@@ -11,6 +11,7 @@ namespace SKPBlogEngine.Web.System
         public SKPDbContext(IConfiguration configuration)
         {
             _configuration = configuration;
+            Database.Migrate();
         }
         public virtual new DbSet<TEntity> Set<TEntity>() where TEntity:BaseEntity
         {
