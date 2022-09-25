@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SKPBlogEngine.Web.System;
 
@@ -10,9 +11,10 @@ using SKPBlogEngine.Web.System;
 namespace SKPBlogEngine.Web.Migrations
 {
     [DbContext(typeof(SKPDbContext))]
-    partial class SKPDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220925171537_member-entity-modified")]
+    partial class memberentitymodified
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.8");
