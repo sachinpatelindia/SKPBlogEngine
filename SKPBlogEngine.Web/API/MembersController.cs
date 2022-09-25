@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Cors;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using SKPBlogEngine.Base.Domain.Members;
 using SKPBlogEngine.Web.Controllers;
@@ -20,6 +21,7 @@ namespace SKPBlogEngine.Web.API
         }
         // GET: api/<MembersController>
         [HttpGet]
+        [Authorize]
         public IEnumerable<Member> Get()
         {
             return GetMembers();
